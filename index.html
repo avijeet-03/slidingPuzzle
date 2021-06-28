@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sliding Puzzle</h1>
+    <h3>Select the difficulty:</h3>
+    <button id="easy" onclick="startTheGame(3)">Easy</button>
+    <button id="medium" onclick="startTheGame(4)">Medium</button>
+    <button id="hard" onclick="startTheGame(5)">Hard</button>
+    <button id="rules" onclick="toggleRules()">What to do 🤷</button>
+    <div id="penalty"></div>
+    <div class="grid"></div>
+    <button id="hint-btn" onclick="toggleHint()">Click to see the number of minimum possible move(s).</button>
+    <p id="para" style="display: none;">
+        Will add the Hint and Solution later.
+    </p>
+</body>
+<script src="script.js"></script>
+</html>
